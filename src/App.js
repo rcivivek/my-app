@@ -15,7 +15,7 @@ const App=() =>{
   {id:'3', text:'Help other studends in the Course Q&A'}]);
 
   const addNewGoalhandler =(newGoal) =>{
-    setCourseGoals(courseGoals.concat(newGoal))
+    setCourseGoals(prevCourseGoals=>prevCourseGoals.concat(newGoal));
   };
   return  <div className='course-goal'> 
   <h2>Course Goals</h2>
